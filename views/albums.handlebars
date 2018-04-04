@@ -1,0 +1,21 @@
+
+
+<form action="/albums" method="POST">
+    
+    <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name">
+     </div>
+           
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
+    <div>
+        <h2 id="display"></h2>
+    </div>
+</form>
+
+{{#each albums}}
+<li>{{Album}}: {{Artist}}</li>
+{{/each}}

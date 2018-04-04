@@ -1,0 +1,24 @@
+<form action="/tracks" method="GET">
+    
+    <div>
+        <label for="name">Minutes:  </label>
+        <input type="text" name="minutes">
+     </div>
+
+     <div>
+        <label for="name">Seconds:   </label>
+        <input type="text" name="seconds">
+     </div>
+           
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
+    <div>
+        <h2 id="display"></h2>
+    </div>
+</form>
+
+{{#each tracks}}
+<li>{{Album}}: {{Artist}}</li>
+{{/each}}
